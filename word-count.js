@@ -9,9 +9,15 @@
 function Words() {};
 
 Words.prototype.count = function (input) {
-var  words = function( input ) {
-      return { word: 1 };
-  }
+  var counts = {};
+  var words = input.match(/\S+/g);
+
+  words.forEach(function (word) {
+    var lcWord = word.toLowerCase();
+    counts[lcWord] = counts.hasOwnProperty(lcWord) ? counts[lcWord] + 1 : 1;
+  });
+
+  return counts;
 };
 
 module.exports = Words;
