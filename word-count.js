@@ -8,10 +8,16 @@
 
 function Words() {};
 
-Words.prototype.count = function (input) {
-//
-// YOUR CODE GOES HERE
-//
+Words.prototype.count = function(input) {
+    //
+    // YOUR CODE GOES HERE
+    //
+    var totalwords = 0;
+    for (var i = 0; i < input.length; i++) {
+        if (input(i) === " ") {
+            totalwords = totalwords + 1;
+        }
+    };
+    console.log(totalwords);
 };
-
 module.exports = Words;
