@@ -14,10 +14,10 @@ Words.prototype.count = function(input) {
     //
     var totalwords = 1;
     for (var i = 0; i < input.length; i++) {
-        if (input[i] === " ") {
+        if (input [i] === " ") {
             totalwords = totalwords + 1;
         }
     }
-    console.log(totalwords);
+    return totalwords;
 };
 module.exports = Words;
