@@ -12,12 +12,12 @@ Words.prototype.count = function(input) {
     //
     // YOUR CODE GOES HERE
     //
-    var totalwords = 0;
+    var totalwords = 1;
     for (var i = 0; i < input.length; i++) {
-        if (input(i) === " ") {
+        if (input[i] === " ") {
             totalwords = totalwords + 1;
         }
-    };
+    }
     console.log(totalwords);
 };
 module.exports = Words;
