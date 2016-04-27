@@ -12,12 +12,6 @@ Words.prototype.count = function(input) {
     //
     // YOUR CODE GOES HERE
     //
-    var totalwords = 1;
-    for (var i = 0; i < input.length; i++) {
-        if (input [i] === " ") {
-            totalwords = totalwords + 1;
-        }
-    }
-    return totalwords;
+   return input.split(" ").length;
 };
 module.exports = Words;
