@@ -8,10 +8,10 @@
 
 function Words() {};
 
-Words.prototype.count = function (input) {
-//
-// YOUR CODE GOES HERE
-//
+Words.prototype.count = function(input) {
+    //
+    // YOUR CODE GOES HERE
+    //
+   return input.split(" ").length;
 };
-
 module.exports = Words;
