@@ -8,9 +8,22 @@
 
 function Words() {};
 
-Words.prototype.count = function (input) {
+Words.prototype.count = function (str) {
 //
-// YOUR CODE GOES HERE
+let result = {};
+      let x = str.toLowerCase();
+      let words = x.split(" ");
+      
+      for(let i =0 ; i< words.length; i++){
+          let word = words[i]; 
+          
+          if(result[word] > 0){
+              result[word]++;
+          }else{
+              result[word]=1;
+          }
+      }
+      return result;
 //
 };
 
